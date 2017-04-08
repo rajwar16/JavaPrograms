@@ -1,0 +1,128 @@
+package com.Bridgelabz.utilityClass;
+
+import java.io.IOException;
+import java.util.Scanner;
+
+
+import com.Bridgelabz.utility.Utility;
+
+public class UtilityClass 
+{
+	public static void main(String[] args) throws IOException 
+	{
+		Scanner sc=new Scanner(System.in);
+		Utility u=new Utility();
+
+		System.out.print("Enter the File Name : ");
+		String fileName=sc.next();
+		String str=u.FileRead(fileName);
+
+		String strArr[]=str.split(" ");
+		System.out.println("File Contains : ");
+		u.display(strArr);
+		System.out.println();
+
+		System.out.println("******MENU******");
+		System.out.printf("1.Bubble sort\n2.Insertion sort\n3.Binary Search\nEnter ur Choice : ");
+		int ch=sc.nextInt();
+		switch(ch)
+		{
+		case 1:	
+			System.out.println("Which type of data u want Sort: ");
+			System.out.printf("1.Integer\n2.Float\n3.Double\n4.String\nEnter ur Choice : ");
+			int Choice = sc.nextInt();
+			switch(Choice)
+			{
+			case 1:
+
+				int[] intArr=u.intgerConverter(strArr);
+				System.out.println("Array before sort: ");
+				u.display(intArr);
+				int[] sortArr=u.insertionSort(intArr);
+				System.out.println("Array after sort: ");
+				u.display(sortArr);
+				break;
+
+			case 2: 
+				float[] floatArr=u.floatConverter(strArr);
+				System.out.println("Array before sort : ");
+				u.display(floatArr);
+				float[] sortFloat=u.insertionSort(floatArr);
+				System.out.println("Array After sort : ");
+				u.display(sortFloat);
+				break;
+
+			case 3: 
+				double[] doubleArr=u.doubleConverter(strArr);
+				System.out.println("Array before sort : ");
+				u.display(doubleArr);
+				float[] sortDouble=u.insertionSort(doubleArr);
+				System.out.println("Array After sort : ");
+				u.display(sortDouble);
+				break;
+
+			case 4: 
+
+				System.out.println("Array before sort : ");
+				u.display(strArr);
+				String[] sortString=u.insertionSort(strArr);
+				System.out.println("Array After sort : ");
+				u.display(sortString);
+				break;
+			}
+			break;
+			
+			
+			
+		//----------CASE 1 FINISH----------------------------------------------------	
+		case 2: 
+			System.out.println("Which type of data u want Sort: ");
+			System.out.printf("1.Integer\n2.Float\n3.Double\n4.String\nEnter ur Choice : ");
+			int Choice1 = sc.nextInt();
+			switch(Choice1)
+			{
+			case 1:
+
+				int[] intArr=u.intgerConverter(strArr);
+				System.out.println("Array before sort: ");
+				u.display(intArr);
+				String[] sortArr=u.bubbleSort(strArr);
+				System.out.println("Array after sort: ");
+				u.display(sortArr);
+				break;
+
+			case 2: 
+				float[] floatArr=u.floatConverter(strArr);
+				System.out.println("Array before sort : ");
+				u.display(floatArr);
+				float[] sortFloat=u.bubbleSort(floatArr);
+				System.out.println("Array After sort : ");
+				u.display(sortFloat);
+				break;
+
+			case 3: 
+				double[] doubleArr=u.doubleConverter(strArr);
+				System.out.println("Array before sort : ");
+				u.display(doubleArr);
+				float[] sortDouble=u.bubbleSort(doubleArr);
+				System.out.println("Array After sort : ");
+				u.display(sortDouble);
+				break;
+
+			case 4: 
+
+				System.out.println("Array before sort : ");
+				u.display(strArr);
+				String[] sortString=u.bubbleSort(strArr);
+				System.out.println("Array After sort : ");
+				u.display(sortString);
+				break;
+			}
+			break;
+
+
+
+
+		}
+
+	}

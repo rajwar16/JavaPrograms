@@ -1,0 +1,9 @@
+package com.Bridgelabz.stockReaport;
+
+public class Company 
+{
+	String compName;
+	int noOfShare;
+	float sharePrice;
+	
+}

@@ -1,0 +1,15 @@
+package sumOf3Integer;
+
+import java.util.Scanner;
+
+public class Sumof3Integer 
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.print("enter size of Array : ");
+		int sizeArr=sc.nextInt();
+		int array[]=new int[sizeArr];
+		
+	  
+	}
+}

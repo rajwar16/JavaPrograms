@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;javaPrograms/src/com.Bridgelabz.javaPrograms&apos;&#x0A;- Original project: &apos;stockReaport&apos;&#x0A;- Destination element: &apos;javaPrograms/src/com.Bridgelabz.javaPrograms&apos;&#x0A;- Original elements:&#x0A;     com.Bridgelabz.stockReaport.StockReport.java&#x0A;     com.Bridgelabz.stockReaport.Company.java" description="Copy compilation units" destination="=javaPrograms/src&lt;com.Bridgelabz.javaPrograms" element1="/src&lt;com.Bridgelabz.stockReaport{StockReport.java" element2="/src&lt;com.Bridgelabz.stockReaport{Company.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1491659556694" units="2" version="1.0"/>
+</session>

@@ -1,0 +1,26 @@
+package com.Bridgelabz.stopWatch;
+
+import java.util.Date;
+import java.util.Scanner;
+
+public class StopWatch 
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		char choice;
+
+		System.out.println("Stopwatch start...");
+		start();
+		System.out.print("Do u want to stop watch press y");
+		choice =sc.next().charAt(0);
+		if(choice=='y' || choice=='Y')
+		{
+			stop();
+		}
+
+	}
+
+	private static void start() {
+		System.currentTimeMillis();
+	}
+}

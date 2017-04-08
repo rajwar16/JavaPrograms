@@ -1,0 +1,34 @@
+package no;
+
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class No 
+{
+	public static void main(String[] args) throws IOException 
+	{
+		FileReader fr = null;
+		try {
+			fr = new FileReader("input.txt");
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		BufferedReader br=new BufferedReader(fr);
+		String line;
+		String s = null;
+		while((line=br.readLine())!=null)
+		{
+			System.out.println(line);
+		}
+		
+		while((line=br.readLine())!=null)
+		{
+			s=s+line;
+		}
+		
+		String s1[]=s.split(",");
+	}
+}

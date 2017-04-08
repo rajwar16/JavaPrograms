@@ -1,0 +1,48 @@
+package com.Bridgelabz.utility;
+
+public class UtilityDisplay 
+{
+	public void display(int[] array)
+	{
+		for(int i=0;i<array.length;i++)
+		{
+			System.out.print(array[i]+" ");
+		}
+		System.out.println();
+	}
+
+	public void display(String[] array)
+	{
+		for(int i=0;i<array.length;i++)
+		{
+			System.out.print(array[i]+" ");
+		}
+		System.out.println();
+	}
+	public void display(float[] array)
+	{
+		for(int i=0;i<array.length;i++)
+		{
+			System.out.print(array[i]+" ");
+		}
+		System.out.println();
+	}
+	
+	public void display(double[] array)
+	{
+		for(int i=0;i<array.length;i++)
+		{
+			System.out.print(array[i]+" ");
+		}
+		System.out.println();
+	}
+	
+	public void display(Char[] array)
+	{
+		for(int i=0;i<array.length;i++)
+		{
+			System.out.print(array[i]+" ");
+		}
+		System.out.println();
+	}
+}

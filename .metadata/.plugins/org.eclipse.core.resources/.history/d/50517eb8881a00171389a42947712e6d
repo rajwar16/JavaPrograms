@@ -1,0 +1,8 @@
+package sumOf3Integer;
+
+public class Sumof3Integer 
+{
+	public static void main(String[] args) {
+	  
+	}
+}

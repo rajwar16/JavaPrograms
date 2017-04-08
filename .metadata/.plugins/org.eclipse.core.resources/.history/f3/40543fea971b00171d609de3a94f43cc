@@ -1,0 +1,216 @@
+package com.Bridgelabz.utility;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Utility 
+{ 
+
+	public String FileRead(String name) throws IOException
+	{
+		FileReader fr = null;
+		try 
+		{
+			 fr=new FileReader(name);
+		} 
+		catch (FileNotFoundException e) 
+		{
+			e.printStackTrace();
+		}
+		BufferedReader br=new BufferedReader(fr);
+		String line;
+		String s="";
+		
+		while((line=br.readLine())!=null)
+		{
+			s=s+line+" ";
+		}
+			
+		return s;
+		
+	}
+	
+
+	
+	public int[] accept(int sizeArr) 
+	{
+		Scanner sc=new Scanner(System.in);
+		int arr[]=new int[sizeArr];
+		System.out.println("Enter "+sizeArr+" Integer");
+		for(int i=0;i<arr.length;i++)
+		{
+			arr[i]=sc.nextInt();
+		}
+		return arr;
+	}
+	/**
+	 * sort Integer Array
+	 * @param intArr
+	 * @return
+	 */
+	public int[] bubbleSort(int[] intArr)
+	{
+		for(int i=0;i<intArr.length;i++)
+		{
+			for(int j=0;j<intArr.length-1;j++)
+			{
+				if(intArr[j]>intArr[j+1])
+				{
+					int temp=intArr[j];
+					intArr[j]=intArr[j+1];
+					intArr[j+1]=temp;
+				}
+			}
+		}
+		return intArr;
+
+	}
+
+	/**
+	 * sort String Array
+	 * @param string array
+	 * @return String array
+	 */
+	public String[] bubbleSort(String[] strArr)
+	{
+		for(int i = 0; i < strArr.length; i++) 
+		{
+		    for(int j = 0; j < strArr.length-1; j++) 
+		    {
+		        if(strArr[j].compareTo(strArr[j + 1]) > -1) 
+		        {
+		            String temp = strArr[j];
+		            strArr[j] = strArr[j + 1];
+		            strArr[j + 1] = temp;
+		        }
+		    }
+		}
+		
+		return strArr;
+	}
+
+
+	/**
+	 * sort float Array
+	 * @param float array
+	 * @return float array
+	 */
+	public float[] bubbleSort(float[] floatArr) 
+	{
+		for(int i=0;i<floatArr.length;i++)
+		{
+			for(int j=0;j<floatArr.length-1;j++)
+			{
+				if(floatArr[j]>floatArr[j+1])
+				{
+					float temp=floatArr[j];
+					floatArr[j]=floatArr[j+1];
+					floatArr[j+1]=temp;
+				}
+			}
+		}
+		return floatArr;
+	}
+
+	/**
+	 * search integer variable 
+	 * @param intArr
+	 * @return
+	 */
+	public int[] binarySearch(int[] intArr) {
+
+		return intArr;
+
+	}
+
+	public String[] binarySearch(String[] strArr)
+	{
+
+		return strArr;
+
+	}
+
+	public float[] bubbleSort(double[] doubleArr) {
+		return null;
+	}
+	
+	public int[] intgerConverter(String[] strArr)
+	{
+		int intArr[]=new int[strArr.length];
+		
+		for(int i=0;i<strArr.length;i++)
+		{
+			intArr[i]=Integer.parseInt(strArr[i]);
+		}
+		return intArr;
+		
+	}
+
+	public float[] floatConverter(String[] strArr) 
+	{
+		float[] floatArr=new float[strArr.length];
+		for(int i=0;i<strArr.length;i++)
+		{
+			floatArr[i]=Float.parseFloat(strArr[i]);
+		}
+		return floatArr;
+	}
+
+	public double[] doubleConverter(String[] strArr)
+	{
+		double[] doubletArr=new double[strArr.length];
+		for(int i=0;i<strArr.length;i++)
+		{
+			doubletArr[i]=Float.parseFloat(strArr[i]);
+		}
+		return doubletArr;
+	}
+	
+	public void display(int[] array)
+	{
+		for(int i=0;i<array.length;i++)
+		{
+			System.out.print(array[i]+" ");
+		}
+		System.out.println();
+	}
+
+	public void display(String[] array)
+	{
+		for(int i=0;i<array.length;i++)
+		{
+			System.out.print(array[i]+" ");
+		}
+		System.out.println();
+	}
+	
+	public void display(float[] array)
+	{
+		for(int i=0;i<array.length;i++)
+		{
+			System.out.print(array[i]+" ");
+		}
+		System.out.println();
+	}
+	
+	public void display(double[] array)
+	{
+		for(int i=0;i<array.length;i++)
+		{
+			System.out.print(array[i]+" ");
+		}
+		System.out.println();
+	}
+	
+	public void display(char[] array)
+	{
+		for(int i=0;i<array.length;i++)
+		{
+			System.out.print(array[i]+" ");
+		}
+		System.out.println();
+	}
+}

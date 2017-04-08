@@ -1,0 +1,20 @@
+package angramDetection;
+
+import java.util.Scanner;
+
+public class AnagramDetection {
+
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter first String : ");
+		String str1=sc.next();
+		System.out.print("Enter Second String : ");
+		String str2=sc.next();
+		
+		char[] charStr1=str1.toCharArray();
+		char[] charStr2=str2.toCharArray();
+		
+		
+	}
+}

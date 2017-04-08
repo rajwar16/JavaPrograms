@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class CouponNumbers 
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("ENter How many Card is there : ");
+		int NoOfCards=sc.nextInt();
+		
+		int count=selectCoupon(NoOfCards);
+		System.out.println("total no of Coupon Selected : "+count);
+	}
+
+	private static int selectCoupon(int noOfCards) 
+	{
+		int count=0;
+		int cardselction=0;
+		boolean selectCardArray[]=new boolean[noOfCards];
+		while(cardselction<noOfCards)
+		{
+			int value = getCoupon(noOfCards);
+			if(!selectCardArray[value])
+			{
+				count++;
+				selectCardArray[value]=true;
+				cardselction++;
+			}
+			
+		}
+		return count ;
+		
+	}
+
+	private static int getCoupon(int noOfCards) 
+	{
+		int value=(int)(Math.random()*noOfCards);
+		return value;
+	}
+}

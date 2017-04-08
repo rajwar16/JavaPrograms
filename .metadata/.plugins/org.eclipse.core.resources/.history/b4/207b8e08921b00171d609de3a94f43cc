@@ -1,0 +1,46 @@
+package com.Bridgelabz.utility;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class UtilityFileRead 
+{ 
+	//*****Method For Reading String
+	
+	
+	
+	//
+
+	public void display(String[] strArr)
+	{
+		for(int i=0;i<strArr.length;i++)
+		{
+			System.out.print(strArr[i]+" ");
+		}
+		System.out.println();
+	}
+	
+	public void display(int[] strArr)
+	{
+		for(int i=0;i<strArr.length;i++)
+		{
+			System.out.print(strArr[i]+" ");
+		}
+		System.out.println();
+	}
+
+	public int[] accept(int sizeArr) 
+	{
+		Scanner sc=new Scanner(System.in);
+		int arr[]=new int[sizeArr];
+		System.out.println("Enter "+sizeArr+" Integer");
+		for(int i=0;i<arr.length;i++)
+		{
+			arr[i]=sc.nextInt();
+		}
+		return arr;
+	}
+}

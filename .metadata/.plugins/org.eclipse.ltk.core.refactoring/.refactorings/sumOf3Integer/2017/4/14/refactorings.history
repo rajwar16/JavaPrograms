@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Sumof3Integer.java&apos; to &apos;sumOf TreeInteger/src/com.Bridgelabz.sumOfThreeInteger&apos;&#x0A;- Original project: &apos;sumOf3Integer&apos;&#x0A;- Destination element: &apos;sumOf TreeInteger/src/com.Bridgelabz.sumOfThreeInteger&apos;&#x0A;- Original element: &apos;sumOf3Integer.Sumof3Integer.java&apos;" description="Copy compilation unit" destination="=sumOf TreeInteger/src&lt;com.Bridgelabz.sumOfThreeInteger" element1="/src&lt;sumOf3Integer{Sumof3Integer.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1491550861207" units="1" version="1.0"/>
+</session>

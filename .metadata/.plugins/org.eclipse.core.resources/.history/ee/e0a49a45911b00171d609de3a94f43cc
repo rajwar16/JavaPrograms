@@ -1,0 +1,65 @@
+package com.Bridgelabz.utilityClass;
+
+import java.io.IOException;
+import java.util.Scanner;
+
+import com.Bridgelabz.utility.ConverterClass;
+import com.Bridgelabz.utility.UtilityDisplay;
+import com.Bridgelabz.utility.UtilityFileRead;
+import com.Bridgelabz.utility.UtilitySort;
+
+public class UtilityClass 
+{
+	public static void main(String[] args) throws IOException 
+	{
+		Scanner sc=new Scanner(System.in);
+		UtilityFileRead ur=new UtilityFileRead();
+		ConverterClass convert =new ConverterClass();
+		UtilitySort u=new UtilitySort();
+		UtilityDisplay ud=new UtilityDisplay();
+		
+
+		System.out.print("Enter the File Name : ");
+		String fileName=sc.next();
+		String str=ur.FileRead(fileName);
+
+		String strArr[]=str.split(" ");
+		System.out.println("File Contains : ");
+		ur.display(strArr);
+		System.out.println();
+
+		System.out.println("Which type of data u want : ");
+		System.out.printf("1.Integer\n2.Float\n3.Double\n4.String\nEnter ur Choice : ");
+		int Choice = sc.nextInt();
+		switch(Choice)
+		{
+		case 1:
+			int[] intArr=convert.intgerConverter(strArr);
+			System.out.println("Array before sort: ");
+			ud.display(intArr);
+			String[] sortArr=u.bubbleSort(strArr);
+			System.out.println("Array after sort: ");
+			ud.display(sortArr);
+			break;
+		case 2: 
+			float[] floatArr=convert.floatConverter(strArr);
+			System.out.println("Array before sort : ");
+			ud.display(floatArr);
+			float[] sortFloat=u.bubbleSort(floatArr);
+			System.out.println("Array After sort : ");
+			ud.display(sortFloat);
+		case 3: 
+			double[] doubleArr=convert.doubleConverter(strArr);
+			System.out.println("Array before sort : ");
+			ud.display(doubleArr);
+			float[] sortDouble=u.bubbleSort(doubleArr);
+			System.out.println("Array After sort : ");
+			ud.display(sortDouble);
+		}
+
+
+		
+
+	}
+
+}

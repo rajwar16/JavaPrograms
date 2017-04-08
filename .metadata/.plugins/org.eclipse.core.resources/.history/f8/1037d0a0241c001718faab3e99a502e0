@@ -1,0 +1,20 @@
+package com.Bridgelabz.stopWatch;
+
+import java.util.Date;
+import java.util.Scanner;
+
+public class StopWatch 
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		char choice ;
+		do{
+			
+		}while();
+		System.out.println("1. Start");
+		System.out.println("2. stop");
+		System.out.print("Enter ur choice : ");
+		int choice =sc.nextInt();
+		
+	}
+}

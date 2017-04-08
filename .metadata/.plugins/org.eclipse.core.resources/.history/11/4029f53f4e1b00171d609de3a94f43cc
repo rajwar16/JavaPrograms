@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class TofindYourNo 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter the value : ");
+		int N=sc.nextInt();
+		System.out.println("Assume No in between 0 to "+(N-1));
+		int high=N-1;
+		int low=0;
+		String choice;
+		while(low<=high)
+		{
+			int mid=(low+high)/2;
+			System.out.println("assume ur no is "+mid+". if yes press ok. ");
+			System.out.println("if ur no is smaller than "+mid+". type true.");
+			System.out.println("if ur no is greater than "+mid+". type false.");
+			
+			choice=sc.next();
+			
+			if(choice.equalsIgnoreCase("ok"))
+			{
+				System.out.println("yes got it ur No is "+mid);
+			}
+			else if(choice.equalsIgnoreCase("true"))
+			{
+				high=mid-1;
+			}
+			else
+			{
+				low=mid+1;
+			}
+		}
+
+
+	}
+}

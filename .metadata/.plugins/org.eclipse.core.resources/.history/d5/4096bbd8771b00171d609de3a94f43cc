@@ -1,0 +1,29 @@
+package com.Bridgelabz.insertionSort;
+
+import java.io.IOException;
+
+import com.Bridgelabz.utility.Utility;
+
+public class InsertionSort 
+{
+	public static void main(String[] args) throws IOException {
+		Utility u=new Utility();
+		String str=u.FileRead("input.txt");
+		String strArr[]=str.split(" ");
+	/*	
+		for(int i=0;i<strArr.length;i++)
+		{
+			System.out.println(strArr[i]);
+		}
+		*/
+		
+		int intArr[]=new int[strArr.length];
+		
+		for(int i=0;i<intArr.length;i++)
+		{
+			intArr[i]=Integer.parseInt(strArr[i]);
+		}
+		
+		u.display(intArr);
+	}
+}

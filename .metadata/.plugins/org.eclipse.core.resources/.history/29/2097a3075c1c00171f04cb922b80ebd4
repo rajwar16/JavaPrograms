@@ -1,0 +1,71 @@
+package com.Bridgelabz.unorderList;
+
+import java.io.IOException;
+import java.util.Scanner;
+
+import com.Bridgelabz.utility.Utility;
+
+public class UnorderList 
+{
+	Node start;
+	Node head;
+	Node nextNode;
+	
+	public static void main(String[] args) 
+	{
+		Utility u=new Utility();
+		Scanner sc=new Scanner(System.in);
+		UnorderList uol=new UnorderList();
+		String str="";
+		
+		System.out.print("Enter the file name : ");
+		String name=sc.next();
+		try 
+		{
+			str=u.FileRead(name);
+		} 
+		catch (IOException e) 
+		{
+			e.printStackTrace();
+		}
+		
+		System.out.println("File contains : ");
+		System.out.println(str);
+		
+		String strArr[]=str.split(" ");
+		
+		int[] intArr=u.intgerConverter(strArr);
+		
+		for(int i=0;i<intArr.length;i++)
+		{
+			uol.addData(intArr[i]);
+		}
+		
+		uol.
+		
+		
+		
+		
+	}
+
+	protected void addData(int i) 
+	{
+		head=start;
+		Node temp=new Node();
+		temp.data=i;
+		temp.nextNode=null;
+		if(start==null)
+		{
+			start=temp;
+		}
+		else
+		{
+			while(head.nextNode!=null)
+			{
+				head=head.nextNode;
+			}
+			head.nextNode=temp;
+			 
+		}
+	}
+}

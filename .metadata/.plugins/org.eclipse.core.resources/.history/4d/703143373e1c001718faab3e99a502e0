@@ -1,0 +1,14 @@
+package com.Bridgelabz.unorderList;
+
+public class UnorderList 
+{
+	
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		UnorderList uol=new UnorderList();
+		
+		
+		
+	}
+}

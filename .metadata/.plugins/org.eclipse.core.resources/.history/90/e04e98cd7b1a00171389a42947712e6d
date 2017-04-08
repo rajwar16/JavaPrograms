@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Gambler 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc =new Scanner(System.in);
+		System.out.print("Enter the Stake :");
+		int stake=sc.nextInt();
+		System.out.print("Enter goal : ");
+		int goal=sc.nextInt();
+		System.out.print("No of Trials :");
+		int trials=sc.nextInt();
+		
+	}
+}

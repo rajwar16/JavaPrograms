@@ -1,0 +1,12 @@
+package com.Bridgelabz.stockReaport;
+
+public class StockReport 
+{
+	public static void main(String[] args) 
+	{
+		Company comDetails[]=new Company[10];
+		Company com[1]=new Company("Relience", 46738, 78934);
+		
+	}
+
+}

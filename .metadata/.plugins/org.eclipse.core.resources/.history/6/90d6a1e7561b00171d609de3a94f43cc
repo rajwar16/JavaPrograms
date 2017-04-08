@@ -1,0 +1,11 @@
+package com.Bridgelabz.stockReport;
+
+import com.Bridgelabz.utility.Utility;
+
+public class BinarySearch 
+{
+	public static void main(String[] args) {
+		Utility u=new Utility();
+		String str=u.FileRead("input.txt");
+	}
+}

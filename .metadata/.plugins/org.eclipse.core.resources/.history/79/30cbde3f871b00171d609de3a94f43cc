@@ -1,0 +1,55 @@
+package com.Bridgelabz.utility;
+
+public class UtilitySort 
+{
+	public int[] bubbleSort(int[] intArr)
+	{
+		for(int i=0;i<intArr.length;i++)
+		{
+			for(int j=0;j<intArr.length-1;j++)
+			{
+				if(intArr[j]>intArr[j+1])
+				{
+					int temp=intArr[j];
+					intArr[j]=intArr[j+1];
+					intArr[j+1]=temp;
+				}
+			}
+		}
+		return intArr;
+
+	}
+
+	public String[] bubbleSort(String[] strArr)
+	{
+		for(int i=0;i<strArr.length;i++)
+		{
+			for(int j=0;j<strArr.length-1;i++)
+			{
+				if(strArr[j].compareTo(strArr[j+1])>0)
+				{
+					String temp=strArr[j];
+					strArr[j]=strArr[j+1];
+					strArr[j+1]=temp;
+					
+				}
+			}
+		}
+		return strArr;
+	}
+
+
+	public int[] binarySearch(int[] intArr)
+	{
+
+		return intArr;
+
+	}
+
+	public String[] binarySearch(String[] strArr)
+	{
+
+		return strArr;
+
+	}
+}

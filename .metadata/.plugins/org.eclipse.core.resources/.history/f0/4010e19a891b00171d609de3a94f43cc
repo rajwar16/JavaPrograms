@@ -1,0 +1,34 @@
+package com.Bridgelabz.utilityClass;
+
+import java.io.IOException;
+import java.util.Scanner;
+
+import com.Bridgelabz.utility.ConverterClass;
+import com.Bridgelabz.utility.UtilityFileRead;
+import com.Bridgelabz.utility.UtilitySort;
+
+public class UtilityClass 
+{
+	public static void main(String[] args) throws IOException 
+	{
+		Scanner sc=new Scanner(System.in);
+		UtilityFileRead ur=new UtilityFileRead();
+		UtilitySort u=new UtilitySort();
+		ConverterClass convert =new ConverterClass();
+		
+		System.out.print("Enter the File Name : ");
+		String str=ur.FileRead("input.txt");
+		
+		String strArr[]=str.split(" ");
+		
+		//ur.display(strArr);
+		
+		//int[] intArr=convert.intgerConverter(strArr);
+		
+		ur.display(strArr);
+		String[] sortArr=u.bubbleSort(strArr);
+		ur.display(strArr);
+		
+	}
+
+}

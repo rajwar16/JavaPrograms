@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class CouponNumbers 
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("ENter How many Card is there : ");
+		int NoOfCards=sc.nextInt();
+		
+		int count=selectCoupon(NoOfCards);
+		System.out.println("total no of Coupon Selected : "+count);
+	}
+
+	private static int selectCoupon(int noOfCards) 
+	{
+		return 0;
+		
+	}
+}

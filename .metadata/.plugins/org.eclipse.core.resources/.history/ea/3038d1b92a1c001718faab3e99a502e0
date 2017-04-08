@@ -1,0 +1,7 @@
+package com.Bridgelabz.stockReaport;
+
+public class Company 
+{
+	String compName;
+	St
+}
